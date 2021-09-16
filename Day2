@@ -1,0 +1,50 @@
+POSTGRES:
+      psql  -U postgres
+      CREATE USER user_name WITH  PASSWORD 'password'     -> This command will Create a User 
+      CREATE DATABASE devs ;                              -> This command will create a database named 'devs'
+      \C                                                  -> This command will connect it with user
+      GRANT ALL PREVILEGES ON DATABASE devs to user_name  -> This command will grant all previleges
+      DROP DATABASE devs                                  -> This command will delete the database devs
+      
+      
+      
+      CREATE TABLE COMAPANY {
+        ID INT NOT NULL,
+        NAME CHAR[50],                                   -> It will create a table in database having ID, NAME, AGE and ADDRESS                             
+        AGE INT,
+        ADDRESS TEXT  
+      };   
+      
+      \d                                                 -> It will show the table
+      \d "Table"                           -> It will show the table with datatypes
+      DROP TABLE COMPANY;                  -> It will delete the table
+      \q                                   -> To exit from database
+      \l                                   -> used to show all the databases
+      
+      
+      
+      
+      
+      
+      SCHEMA: It is used to create folders in database
+      
+      CREATE SCHEMA schema_name            -> It will create a schema
+      
+      CREATE TABLE myschema.company  (
+      ID INT NOT NULL, 
+      NAME VARCHAR(20) NOT NULL, 
+      AGE INT NOT NULL,
+      ADRESS CHAR[25], 
+      SALARY DECIMAL(18,2),
+      PRIMARY KEY (ID)
+      );                                                        It will create a table named comapny inside the schema myschema
+      
+      
+      DROP SCHEMA myschema CASCADE;                     -> It means to delete folder without showing any problem
+      
+      INSERT INTO COMPANY
+      (ID, NAME, AGE, ADDRESS, SALARY)
+      VALUES (1, 'Paul', 32, 'California', 2000.00);
+      
+      DROP DATABASE IF EXISTS COMPANY;        -> It will drop the table company
+      
