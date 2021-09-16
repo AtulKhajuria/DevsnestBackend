@@ -1,0 +1,14 @@
+Install Redis-
+Commands in Redis:
+      1) SET
+      2) GET
+      3) DEL
+      4) Exits
+      5) KEY* -> Return all Keys
+      6) FLUSHALL -> remove all the key value
+      7) ttl -> gives the time of expiry
+      8) expire name time -> Sets the expiry time
+      9) lpush, rpush, lpop , rpop
+      10) LRANGE name 0 -1 -> prints all elements
+      11) SET: It is array in which no element can repeat
+      12) SADD setname_name "element_name"
